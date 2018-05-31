@@ -7,6 +7,12 @@
         <mesh filename="package://rviz_melodic_urdf_issue/a.dae" scale="1.0 1.0 1.0" />
       </geometry>
     </visual>
+    <collision name="a_visual">
+      <origin xyz="-0.5 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rviz_melodic_urdf_issue/a.dae" scale="1.0 1.0 1.0" />
+      </geometry>
+    </collision>
   </link>
   <joint name="a_b_joint" type="fixed">
     <parent link="a_link"/>
@@ -20,6 +26,12 @@
         <mesh filename="package://rviz_melodic_urdf_issue/b.dae" scale="1.0 1.0 1.0" />
       </geometry>
     </visual>
+    <collision name="b_visual">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rviz_melodic_urdf_issue/b.dae" scale="1.0 1.0 1.0" />
+      </geometry>
+    </collision>
   </link>
   <joint name="b_c_joint" type="fixed">
     <parent link="b_link"/>
@@ -33,5 +45,11 @@
         <mesh filename="package://rviz_melodic_urdf_issue/c.dae" scale="1.0 1.0 1.0" />
       </geometry>
     </visual>
+    <collision name="c_visual">
+      <origin xyz="0.5 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rviz_melodic_urdf_issue/c.dae" scale="1.0 1.0 1.0" />
+      </geometry>
+    </collision>
   </link>
 </robot>
